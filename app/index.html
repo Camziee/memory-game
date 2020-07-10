@@ -1,0 +1,140 @@
+<!DOCicon html>
+<html lang=pt-br>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="../css-components/normalize.css">
+    <link rel="stylesheet" href="../css-components/style.css">
+    <link rel="stylesheet" href="../css-components/header-box.css">
+    <link rel="stylesheet" href="../css-components/player-box.css">
+    <link rel="stylesheet" href="../css-components/game-box.css">
+    <link rel="stylesheet" href="../css-components/game-data.css">
+    <link rel="stylesheet" href="../css-components/footer-box.css">
+
+    <title>Memory Game</title>
+</head>
+
+<body class="game-wrapper">
+
+    <header class="header-box">
+        <h1 class="header-box_title">Jogo da Memória</h1>
+    </header>
+
+    
+    <div class="player-box">
+            <input icon="text" class="player-box_input" name="player-box_input" required placeholder="Digite seu nome">
+            <p class="player-box_button">Play</p>
+    </div>
+
+    <div class="game-box">
+        <div class="game-card" data-icon="24-7">
+            <img class="front-face" src="../images/24-7.png" alt="24-7" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="barcode">
+            <img class="front-face" src="../images/barcode.png" alt="barcode" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="buy-button">
+            <img class="front-face" src="../images/buy-button.png" alt="buy-button" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="credit-card">
+            <img class="front-face" src="../images/credit-card.png" alt="credit-card" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="delivery-truck">
+            <img class="front-face" src="../images/delivery-truck.png" alt="delivery-truck" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="discount">
+            <img class="front-face" src="../images/discount.png" alt="discount" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="info">
+            <img class="front-face" src="../images/info.png" alt="info" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="laptop">
+            <img class="front-face" src="../images/laptop.png" alt="laptop" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="money">
+            <img class="front-face" src="../images/money.png" alt="money" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="online-shopping">
+            <img class="front-face" src="../images/online-shopping.png" alt="online-shopping" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+
+        <div class="game-card" data-icon="24-7">
+            <img class="front-face" src="../images/24-7.png" alt="24-7" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="barcode">
+            <img class="front-face" src="../images/barcode.png" alt="barcode" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="buy-button">
+            <img class="front-face" src="../images/buy-button.png" alt="buy-button" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="credit-card">
+            <img class="front-face" src="../images/credit-card.png" alt="credit-card" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="delivery-truck">
+            <img class="front-face" src="../images/delivery-truck.png" alt="delivery-truck" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="discount">
+            <img class="front-face" src="../images/discount.png" alt="discount" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="info">
+            <img class="front-face" src="../images/info.png" alt="info" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="laptop">
+            <img class="front-face" src="../images/laptop.png" alt="laptop" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="money">
+            <img class="front-face" src="../images/money.png" alt="money" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+        <div class="game-card" data-icon="online-shopping">
+            <img class="front-face" src="../images/online-shopping.png" alt="online-shopping" />
+            <img class="back-face" src="../images/cart.png" alt="cart" />
+        </div>
+     </div>
+
+    <aside class="game-data">
+        <div class="game-data_rounds">
+            <p class="rounds_title">Rodadas</p>
+            <div class="rounds_count">
+                {Contador de rodadas}
+            </div>
+        </div>
+
+        <div class="game-data_ranking">
+            <p class="ranking_title">Ranking</p>
+            <div class="ranking_count">
+                {Ranking de jogadores}
+        </div>
+    </aside>
+
+    <footer class="footer-box">
+        <p class="footer-box_author">Made with ❤️ by <a href="http://github.com/Camziee" target="_blank">Camz</a></p>
+        <p class="footer-box_reference">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank"> www.flaticon.com</a>
+        </p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

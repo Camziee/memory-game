@@ -1,0 +1,59 @@
+.player-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+       
+    background-color: #63fbe7;
+}
+
+@media (max-width: 1100px) {
+    .player-box {
+        grid-column: 1/1;
+        grid-row: 2/3;
+    }
+  }
+
+.player-box_input {
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 50%;
+    height: 25%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.player-box_input:hover, .player-box_input:focus {
+    box-shadow: 3px 3px 15px white;
+    outline-color: #fa7f72;
+}
+
+
+.player-box_button {
+	box-shadow:inset 0px 0px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e45a4d 100%);
+	background-color:#fc8d83;
+	border-radius:5px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size: 18px;
+	font-weight:bold;
+	padding:5px 23px;
+    text-decoration:none;
+    margin-top: 0;
+}
+.player-box_button:hover {
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}
+.player-box_button:active {
+	position:relative;
+	top:1px;
+}

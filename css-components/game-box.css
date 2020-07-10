@@ -1,0 +1,55 @@
+
+.game-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 5px;
+    padding: 10px;
+
+    justify-content: center;
+    align-content: center;
+
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+    background-color: #63fbe7;
+    border-top: 5px solid white;
+    perspective: 1000px;
+}
+@media (max-width: 1100px) {
+    .game-box {
+        grid-column: 1/1;
+        grid-row: 3/4;
+    }
+  }
+
+.game-card {
+    position: relative;
+    background-color: #161616;
+    border-radius: 8px;
+    margin: 10px 5px;
+    height: 150px;
+}
+
+.game-card:hover {
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.game-card.flip {
+    transform: rotateY(180deg);
+  }
+
+.front-face, .back-face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    left: 10%;
+    border-radius: 5px;
+    background-color: #161616;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+  }
