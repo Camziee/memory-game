@@ -1,2 +1,2 @@
-Fazer download como ZIP
-Abrir o app\index.html no browser
+ - Fazer o download em ZIP
+ - Extrair os arquivos e abrir o app\index.html no navegador
